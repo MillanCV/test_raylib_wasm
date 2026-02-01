@@ -2,9 +2,17 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>My Raylib Game</title>
+    <title>My Raylib WASM Game</title>
 </head>
 <body>
+    <canvas id="canvas" width="640" height="360"></canvas>
+
+    <script>
+        var Module = {
+            canvas: document.getElementById('canvas')
+        };
+    </script>
+
     <script src="game.js"></script>
 </body>
 </html>
